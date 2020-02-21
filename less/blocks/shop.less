@@ -1,0 +1,224 @@
+.shop{
+  padding-top: 95px/2;
+  padding-bottom: 110px/2;
+  position: relative;
+  
+  @media (min-width: 1254px){
+    padding-top: 95px;
+    padding-bottom: 110px;
+  }
+
+  &:after{
+    position: absolute;
+    content: '';
+    top: -330px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 984px;
+    z-index: -1;
+    background-image: url('../img/bg/bg-lines.png'), url('../img/bg/bg-water.jpg');
+    background-repeat: repeat-y, no-repeat;
+    background-position: center, center;
+    background-size: auto, cover; 
+  }
+}
+
+.shop-slider{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+
+.shop-slider-wrapper{
+  height: 565px;
+  margin-bottom: 80px;
+  //margin-top: 50px;
+  position: relative;
+}
+
+.shop-slider-spicial-holder{
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  @media (min-width: 1394px){
+    right: -85px;
+  }
+}
+
+.shopSldier-controls{
+  position: relative;
+}
+
+.shopSlider-left{
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 48px;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  z-index: 9;
+  cursor: pointer;
+  //margin-left: 10px;
+
+  @media (min-width: 640px){
+    transform: translate(100%, 0%);
+    left: 0; 
+  }
+
+  @media (min-width: 1254px){
+    left: -120px;
+    bottom: 175px;
+  }
+}
+
+.shopSlider-right{
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 48px;
+  padding: 15px; 
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  z-index: 9;
+  cursor: pointer;
+
+  @media (min-width: 640px){
+    transform: translate(-100%, 0%);
+    right: 0; 
+  }
+
+  @media (min-width: 1254px){
+    right: -120px;
+    bottom: 175px;
+  }
+
+  img {
+    vertical-align: top;
+  }
+}
+
+.title-wrapper{
+  text-align: center;
+  .title
+}
+
+.board{
+  position: relative;
+  width: 250px;
+  height: 435px;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 640px){
+    padding-left: 185px;
+    width: 435px + 185px;
+  }
+
+  @media (min-width: 1254px){
+    // width: 435px;
+    // height: 435px;
+    // margin-top: 120px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.board__img-holder{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  height: 320px;
+  background-color: #ececec;
+
+  @media (min-width: 640px){
+    left: 272px;
+  }
+
+  @media (min-width: 1254px){
+    left: 0;
+  }
+}
+
+.board__img{
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0);
+}
+
+.board-desc{
+  width: 210px;
+  position: absolute;
+  top: 196px;
+  right: 0;
+  z-index: 9;
+  text-align: right;
+
+  @media (min-width: 640px){
+    right: auto;
+    left: 216px + 185px;
+    text-align: left;
+  }
+
+  @media (min-width: 1254px){
+    left: 216px;
+  }
+}
+
+.board__cat{
+  color: #7a7a7a;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.board__title{
+  color: #333333;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.26;
+}
+
+.board-buy{
+  margin-top: 38px;
+  margin-left: 55px;
+}
+
+.board-buy__price{
+  color: #ce60a8;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  margin-bottom: 3px; 
+}
+
+.board-buy__link{
+  color: #333333;
+  font-family: "League Spartan", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.54px;
+  margin-left: 3px;
+}
+
+.shop-link-wrapper{
+  display: flex;
+ justify-content: center;
+}
